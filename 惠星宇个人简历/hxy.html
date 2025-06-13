@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>惠星宇的个人简历</title>
+    <link rel="stylesheet" href="hxy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loader"></div>
+
+    <!-- AI聊天机器人 -->
+    <div id="chatbot-container">
+        <div id="chatbot-header">
+            <span>AI助手</span>
+            <button id="chatbot-close">×</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="chatbot-user-input" placeholder="输入你的问题...">
+            <button id="chatbot-send">发送</button>
+        </div>
+    </div>
+    <button id="chatbot-toggle">AI助手</button>
+
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="container">
+            <h1>惠星宇</h1>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#education">教育背景</a></li>
+                <li><a href="#skills">专业技能</a></li>
+                <li><a href="#projects">项目经验</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <button id="theme-toggle">深色模式</button>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <img src="/images/pic5.jpg" alt="惠星宇的照片" class="avatar">
+                <h2 class="highlight-title">你好，我是惠星宇</h2>
+                <p class="highlight-text">三亚学院盛宝金融科技商学院 区块链工程2301班</p>
+                <p class="highlight-text">热爱编程，喜欢学习新技术</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2><i class="fas fa-graduation-cap"></i> 教育背景</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>三亚学院盛宝金融科技商学院</h3>
+                    <p>区块链工程专业 | 2023年至今</p>
+                    <p>主修课程：区块链原理、智能合约开发、密码学基础</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>高中毕业</h3>
+                    <p>陕西省西安中学 | 2020-2023</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>初中毕业</h3>
+                    <p>陕西省昆山中学 | 2017-2020</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>小学毕业</h3>
+                    <p>陕西省城关小学 | 2011-2017</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- 专业技能 -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2><i class="fas fa-laptop-code"></i> 专业技能</h2>
+        <p class="section-subtitle">以下是我掌握的主要技术栈和技能水平</p>
+        
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3><i class="fas fa-code"></i> HTML/CSS</h3>
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <span>掌握程度</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <p>能够编写语义化的HTML和现代化的CSS，熟悉Flexbox、Grid布局和响应式设计。</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3><i class="fas fa-laptop-code"></i> JavaScript</h3>
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <span>掌握程度</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <p>熟悉ES6+语法，DOM操作，异步编程，能够开发交互式网页应用。</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3><i class="fas fa-project-diagram"></i> 区块链基础</h3>
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <span>掌握程度</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                    </div>
+                </div>
+                <p>了解区块链基本原理，智能合约开发，正在深入学习以太坊和Solidity。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- 项目经验 -->
+<section id="projects" class="section">
+    <div class="container">
+        <div class="projects-header">
+            <h2><i class="fas fa-project-diagram"></i> 项目经验</h2>
+            <p>以下是我参与或独立完成的主要项目，展示了我的技术能力和实践经验</p>
+        </div>
+        
+        <!-- 轮播图 -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="/images/pic2.jpg" alt="三亚学院校园">
+                    <div class="slide-content">
+                        <h3>我学习的地方</h3>
+                        <p>美丽的三亚学院 - 我的区块链技术学习之旅从这里开始</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/pic3.jpg" alt="区块链项目指导">
+                    <div class="slide-content">
+                        <h3>区块链项目实践</h3>
+                        <p>在刘天博老师的指导下完成区块链相关项目，加深了对前端技术的理解</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        
+        <!-- 项目卡片 -->
+        <div class="projects-container">
+            <div class="project-card">
+                <h3><i class="fas fa-code"></i> 个人网站开发</h3>
+                <p>独立设计并开发了个人简历网站，运用HTML5、CSS3和JavaScript技术，实现了响应式布局和动态交互效果。</p>
+                <p>通过这个项目，我掌握了现代前端开发的基本流程和技术栈，为后续学习打下了坚实基础。</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML5</span>
+                    <span class="project-tag">CSS3</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">响应式设计</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> 查看演示</a>
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> 源代码</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3><i class="fas fa-link"></i> 区块链学习项目</h3>
+                <p>在区块链课程中完成了一系列实践项目，包括简单的智能合约开发和区块链原理验证。</p>
+                <p>通过这些项目，我对区块链技术的核心概念有了更深入的理解，并培养了解决实际问题的能力。</p>
+                <div class="project-tags">
+                    <span class="project-tag">区块链基础</span>
+                    <span class="project-tag">智能合约</span>
+                    <span class="project-tag">Solidity</span>
+                    <span class="project-tag">Web3.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-book"></i> 学习笔记</a>
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> 项目代码</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- 联系方式 -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2><i class="fas fa-envelope"></i> 联系方式</h2>
+        <p class="section-subtitle">欢迎通过以下方式与我取得联系</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>电子邮箱</h3>
+                        <p>3058126343@qq.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>联系电话</h3>
+                        <p>15509131111</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>联系地址</h3>
+                        <p>海南省三亚市三亚学院</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3><i class="fas fa-paper-plane"></i> 发送消息</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">您的姓名</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">电子邮箱</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">留言内容</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">发送消息 <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top">↑</button>
+
+    <script src="hxy.js"></script>
+</body>
+</html>
