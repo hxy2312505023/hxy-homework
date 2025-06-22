@@ -58,24 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         dots[currentSlide].classList.add('active');
         
         document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
-        
-        // 重置所有动画
-        slides.forEach(slide => {
-            const h3 = slide.querySelector('h3');
-            const p = slide.querySelector('p');
-            if (h3) h3.style.opacity = '0';
-            if (p) p.style.opacity = '0';
-        });
-        
-        // 如果是当前激活的slide，显示内容
-        if (slides[currentSlide].classList.contains('active')) {
-            setTimeout(() => {
-                const currentH3 = slides[currentSlide].querySelector('h3');
-                const currentP = slides[currentSlide].querySelector('p');
-                if (currentH3) currentH3.style.opacity = '1';
-                if (currentP) currentP.style.opacity = '1';
-            }, 50);
-        }
     }
     
     document.querySelector('.next').addEventListener('click', function() {
@@ -108,9 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
             showSlide(currentSlide + 1);
         }, 5000);
     });
-    
-    // 初始化显示第一个slide的内容
-    showSlide(0);
     
     // 平滑滚动
     document.querySelectorAll('nav a').forEach(anchor => {
@@ -186,7 +165,23 @@ document.addEventListener('DOMContentLoaded', function() {
             // 模拟API延迟
             await new Promise(resolve => setTimeout(resolve, 1000));
             
-            // 模拟响应 - 实际使用时请替换为API调用
+            // 这里应该是实际的API调用代码
+            // 示例:
+            // const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //         'Authorization': 'Bearer YOUR_API_KEY'
+            //     },
+            //     body: JSON.stringify({
+            //         model: "deepseek-chat",
+            //         messages: [{role: "user", content: message}]
+            //     })
+            // });
+            // const data = await response.json();
+            // const aiResponse = data.choices[0].message.content;
+            
+            // 模拟响应 - 实际使用时请替换为上面的API调用
             const aiResponse = getMockAIResponse(message);
             
             // 移除"正在思考"消息
